@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THEMOZAMMIL_14 - Latest News & Content</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #042d57; }
+    header { background: linear-gradient(135deg, #8b1a6d 0%, #22eaf5 100%); color: rgb(240, 233, 233); padding: 2rem; text-align: center; }
+    nav input { padding: 0.5rem; width: 300px; border: none; border-radius: 25px; margin-top: 1rem; }
+    section { max-width: 1200px; margin: auto; padding: 2rem; }
+    .post { background: rgb(153, 155, 210); margin: 2rem 0; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .post h3 { color: #0c0438; margin-bottom: 1rem; }
+    iframe, img, embed { max-width: 100%; height: auto; border-radius: 5px; }
+    footer { background: #333; color: rgb(33, 110, 90); text-align: center; padding: 1rem; }
+    @media (max-width: 768px) { nav input { width: 100%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THEMOZAMMIL_14</h1>
+    <p> Latest News, Videos, Reels, Images & PDFs</p>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search posts... (e.g., news, video)">
+    </div>
+  </header>
+  <article class="post">
+
+  <section id="posts">
+
+        <a href="https://www.instagram.com/themozammil_14/" target="_blank">
+        <img src="img\insta.jfif" width="40" alt="Instagram"> <h3>Instagram </h3>   
+        </a>
+    </article>
+    
+    <!-- Example Posts - Yahan naye add karo -->
+    <article class="post">
+      <a href="https://www.youtube.com/@as_mizo" target="_blank">
+              <img src="img/youtube.png" width="50" alt="YouTube"><h3> YouTube</h3>
+             </a>
+         
+    </article>
+
+    <article class="post">
+      <h3>Beautiful Image Gallery</h3>
+      <img src="img\1.jpeg" width="150" alt="Image">
+      <img src="img\4.webp" width="130" alt="Image">
+      <img src="img\3.webp" width="190" alt="Image">
+      
+    </article>
+    <article class="post">
+        <a href="https://drive.google.com/file/d/1kxKjTe5xgCuFpC3q1edVcm2ScDuERo7_/view?usp=drivesdk" download>
+            <img src="/.png" width="50"> PDF Download
+          </a>
+
+    </article>
+
+    <!-- Aur posts add karo jaise: <article class="post"> ... </article> -->
+  </section>
+
+  <footer>
+    <p>&copy; THEMOZAMMIL_14. Bihar India</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const posts = document.querySelectorAll('.post');
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      posts.forEach(post => {
+        const text = post.textContent.toLowerCase();
+        post.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

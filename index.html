@@ -1,76 +1,63 @@
-
-
-
-
-
 <!DOCTYPE html>
-<h1><font color="purple">
-  <center>{KING}SHERWAN ADIL</center></font></h1>
-
-<html>
-<head><style>
-  tr{color:red;}	
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THEMOZAMMIL_14 - Latest News & Content</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+    header { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2rem; text-align: center; }
+    nav input { padding: 0.5rem; width: 300px; border: none; border-radius: 25px; margin-top: 1rem; }
+    section { max-width: 1200px; margin: auto; padding: 2rem; }
+    .post { background: white; margin: 2rem 0; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .post h3 { color: #4facfe; margin-bottom: 1rem; }
+    iframe, img, embed { max-width: 100%; height: auto; border-radius: 5px; }
+    footer { background: #333; color: white; text-align: center; padding: 1rem; }
+    @media (max-width: 768px) { nav input { width: 100%; } }
   </style>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>sherwan </title>
 </head>
-<body><center><img src="images/IMG_20240124_052658_078.webp" width="200px"height="200px"></center>
+<body>
+  <header>
+    <h1>THEMOZAMMIL_14</h1>
+    <p> Latest News, Videos, Reels, Images & PDFs</p>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search posts... (e.g., news, video)">
+    </div>
+  </header>
 
-  <h1><font color="voilet">
-    <center>  Introduction  </center></font>
-  </h1>
-  <p> <b> Hi i am sherwan adil my village name is haji subhan purab sarai munger  District- Munger </b>
-    
-    <h1>
-      
-        <center>   <font color="orange"> <center>Qualification</hre></font> </h1>
-      <b>  my qualification is martic pass with first division total marks 350 pass year 2023 after then fill the form intrance exam  and crack the exam after that i fill the form of dipolma  and 
-      <hre> i get qualified now i am studying in G.P khagaria.</hre>
-    <h1><font color="green"><center> Hobbies </center></font></h1> My faviourte Game  is cricket my 
-    faviourte  player M.S.dhoni sir. I also love to study and listen songs and enjoy with friends.
-      </b>
-    
-  <a href="https://www.gpkhagaria.ac.in/">      
-    <img src="Ms D.jpg" width="300px" height=150px></a>
-           
-    
-      
-      <m sgeikb h1>  <center><font color="Red"> king sher </center></font></ MSheikh h1>
-      
-      <video> controls scr="mm.mp4" width="100px" height=150px</video>
-      
-    </Body>
-    </html>
+  <section id="posts">
+    <!-- Example Posts - Yahan naye add karo -->
+    <article class="post">
+      <h3>Latest Tech News</h3>
+      <p>Embed YouTube video or reel:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <p>Date: Jan 1, 2026</p>
+    </article>
+
+    <article class="post">
+      <h3>Beautiful Image Gallery</h3>
+      <img src="https://your-image-link.jpg" alt="Image">
+      <p>Download PDF: <embed src="https://your-pdf-link.pdf" width="500" height="375" type="application/pdf"></p>
+    </article>
+
+    <!-- Aur posts add karo jaise: <article class="post"> ... </article> -->
+  </section>
+
+  <footer>
+    <p>&copy; THEMOZAMMIL_14. Bihar India</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const posts = document.querySelectorAll('.post');
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      posts.forEach(post => {
+        const text = post.textContent.toLowerCase();
+        post.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
