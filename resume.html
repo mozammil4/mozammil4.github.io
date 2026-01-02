@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themozammil</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- [web:2][web:15] -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com"> <!-- [web:5] -->
+    <style>
+        body { background-color: #050505; color: #e5e5e5; font-family: 'Segoe UI', sans-serif; }
+        .gold-gradient { background: linear-gradient(45deg, #d4af37, #f9e272); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); transition: 0.3s; }
+        .glass-card:hover { border-color: #d4af37; transform: translateY(-5px); }
+        .btn-gold { background: #d4af37; color: black; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="p-6 border-b border-gray-900">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <!-- Logo and Name -->
+                <div class="w-12 h-12 rounded-full border-2 border-yellow-500 overflow-hidden">
+                    <img src="img/1.jpg" alt="Logo">
+                </div>  
+                <h1 class="text-2xl font-bold tracking-tighter">MIZO
+                   <span class="gold-gradient">WEB</span></h1>
+            </div>
+            <!-- Social Apps -->
+            <div class="flex gap-5 text-xl">
+                <a href="#"><i class="fab fa-instagram hover:text-yellow-500"></i></a>
+                <a href="#"><i class="fab fa-github hover:text-yellow-500"></i></a>
+                <a href="#"><i class="fab fa-linkedin hover:text-yellow-500"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="py-12 px-6 container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">My <span class="gold-gradient">Activities</span></h2>
+        
+        <!-- 4 Activity Buttons Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- 1. Music Activity -->
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-music text-4xl mb-4 text-yellow-500"></i>
+                <h3 class="text-xl font-bold mb-4">1. Halal Music Player</h3>
+                <p class="text-gray-400 text-sm mb-6">Listen to your favorite music.</p>
+                <a href="music.html" class="btn-gold px-6 py-2 rounded-lg inline-block w-full">Open Music</a>
+            </div>
+
+            <!-- 2. Image Gallery -->
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-image text-4xl mb-4 text-yellow-500"></i>
+                <h3 class="text-xl font-bold mb-4">2.Islamic Picture</h3>
+                <p class="text-gray-400 text-sm mb-6">See images.</p>
+                <a href="img.html" class="btn-gold px-6 py-2 rounded-lg inline-block w-full">View Images</a>
+            </div>
+
+            <!-- 3. Book Appointment / Read -->
+            <div class="glass-card p-8 rounded-2xl">
+                <i class="fas fa-book text-4xl mb-4 text-yellow-500"></i>
+                <h3 class="text-xl font-bold mb-4">3. QURAN SURAH Library</h3>
+                <p class="text-gray-400 text-sm mb-6">Read books .</p>
+                <a href="book.html" class="btn-gold px-6 py-2 rounded-lg inline-block w-full">Open Book</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Simple Script for Social Logic -->
+    <script>
+        function downloadReel() {
+            alert("2026 API Connecting... Reel download functionality starting!");
+        }
+    </script>
+
+</body>
+</html>
