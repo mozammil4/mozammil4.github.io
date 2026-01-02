@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Big Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- [web:59] -->
+  <style>
+    body { background:#050505; color:#e5e5e5; font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <section class="py-10 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">
+      My <span class="text-yellow-400">Gallery</span>
+    </h2>
+
+    <!-- Image gallery -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+      <!-- Bas yaha se images add karte jana -->
+      <img src="img/2.jpg"  alt="Project 1"  class="rounded-lg object-cover w-full h-40" loading="lazy">
+      <img src="img/5.webp"  alt="Project 2"  class="rounded-lg object-cover w-full h-40" loading="lazy">
+      <img src="img/t.webp"  alt="Project 3"  class="rounded-lg object-cover w-full h-40" loading="lazy">
+      <img src="img/3.webp"  alt="Project 4"  class="rounded-lg object-cover w-full h-40" loading="lazy">
+      <img src="img/4.webp"  alt="Project 5"  class="rounded-lg object-cover w-full h-40" loading="lazy">
+      <!-- ... yahi line copy–paste karke pic6, pic7 ... pic500 tak -->
+    </div>
+  </section>
+</body>
+</html>
