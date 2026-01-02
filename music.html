@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Music Player</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background:#050505; color:#e5e5e5; font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <section class="py-10 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">
+      My <span class="text-yellow-400">Music</span>
+    </h2>
+
+    <!-- Music list -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- Yaha se players add karte jana -->
+      <div class="glass-card bg-white/5 border border-yellow-500/20 rounded-xl p-4">
+        <p class="mb-2 text-sm text-gray-300">Track 1</p>
+        <audio controls preload="none" class="w-full">
+          <source src="mus/1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="glass-card bg-white/5 border border-yellow-500/20 rounded-xl p-4">
+        <p class="mb-2 text-sm text-gray-300">Track 2</p>
+        <audio controls preload="none" class="w-full">
+          <source src="mus/2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="glass-card bg-white/5 border border-yellow-500/20 rounded-xl p-4">
+        <p class="mb-2 text-sm text-gray-300">Track 3</p>
+        <audio controls preload="none" class="w-full">
+          <source src="mus/3.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="glass-card bg-white/5 border border-yellow-500/20 rounded-xl p-4">
+        <p class="mb-2 text-sm text-gray-300">Track 4</p>
+        <audio controls preload="none" class="w-full">
+          <source src="mus/4.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="glass-card bg-white/5 border border-yellow-500/20 rounded-xl p-4">
+        <p class="mb-2 text-sm text-gray-300">Track 5</p>
+        <audio controls preload="none" class="w-full">
+          <source src="mus/5.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <!-- ...yaha tak tum apne jitne chahe tracks add kar sakte ho -->
+
+    </div>
+  </section>
+
+  <!-- Optional: ek play hone par baaki pause karne ka chhota script -->
+  <script>
+    const audios = document.querySelectorAll('audio');
+    audios.forEach(aud => {
+      aud.addEventListener('play', () => {
+        audios.forEach(other => {
+          if (other !== aud) {
+            other.pause();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
